@@ -29,9 +29,7 @@ public class FirstFragment extends Fragment {
 
         String []opciones={"teórico","práctico"};
 
-        ArrayAdapter<String> contenido= new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item,opciones);
-        //new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,opciones);
-
+        ArrayAdapter<String> contenido= new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, opciones);
         spinner.setAdapter(contenido);
 
         return v;
