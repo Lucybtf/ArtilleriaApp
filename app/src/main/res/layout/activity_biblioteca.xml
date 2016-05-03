@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:paddingBottom="10dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:nestedScrollingEnabled="false">
-
+    tools:context="com.example.artilleriaapp.artilleriaapp.Biblioteca">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Nacionalidad"
+        android:text="Nacionalidad del Plano"
         android:id="@+id/nacionalidad"
         android:layout_below="@+id/tipo_arma" />
-
     <Spinner
         android:id="@+id/spinnerarchivonacionalidad"
         android:layout_width="match_parent"
@@ -31,10 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Procedencia"
+        android:text="Nombre de la Biblioteca"
         android:id="@+id/nombrebiblioteca"
-        android:layout_alignRight="@+id/nacionalidad"
-        android:layout_alignEnd="@+id/nacionalidad"
         android:layout_below="@+id/spinnerarchivonacionalidad"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -46,12 +42,11 @@
         android:layout_below="@+id/nombrebiblioteca"
         android:layout_alignLeft="@+id/nombrebiblioteca"
         android:layout_alignStart="@+id/nombrebiblioteca" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Fecha de procedencia"
+        android:text="Autor"
         android:id="@+id/autor"
         android:layout_below="@+id/edit_nombre_archivo"
         android:layout_alignParentLeft="true"
@@ -69,70 +64,47 @@
         android:layout_alignRight="@+id/spinnerarchivonacionalidad"
         android:layout_alignEnd="@+id/spinnerarchivonacionalidad" />
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:textAppearance="?android:attr/textAppearanceMedium"
-      android:text="Material"
-      android:id="@+id/edicion"
-      android:layout_alignParentTop="false"
-      android:layout_alignParentStart="true"
-      android:layout_below="@+id/edit_autor"
-      android:layout_alignParentEnd="false"
-      android:layout_alignParentLeft="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Edición"
+        android:id="@+id/edicion"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_autor"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="false" />
 
-  <EditText
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/edit_seccion"
-      android:layout_below="@+id/edicion"
-      android:layout_alignLeft="@+id/edit_nombre_archivo"
-      android:layout_alignStart="@+id/edit_nombre_archivo"
-      android:layout_alignParentRight="true"
-      android:layout_alignParentEnd="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_seccion"
+        android:layout_below="@+id/edicion"
+        android:layout_alignLeft="@+id/edit_nombre_archivo"
+        android:layout_alignStart="@+id/edit_nombre_archivo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Origen del Plano"
+        android:text="Descripción"
         android:id="@+id/descripcion"
         android:layout_below="@+id/edit_seccion"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <RadioButton
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Archivo"
-        android:id="@+id/radioButton"
+        android:id="@+id/edit_legajo"
         android:layout_below="@+id/descripcion"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Biblioteca"
-        android:id="@+id/radioButton2"
-        android:checked="false"
-        android:layout_below="@+id/radioButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:clickable="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentRight="true"
-        android:src="@mipmap/ic_arrow_forward_white_18dp" />
-
+        android:layout_alignRight="@+id/edit_seccion"
+        android:layout_alignEnd="@+id/edit_seccion" />
 
 </RelativeLayout>

@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Procedencia"
-        android:id="@+id/nombrearchivo"
+        android:id="@+id/nombrebiblioteca"
         android:layout_alignRight="@+id/nacionalidad"
         android:layout_alignEnd="@+id/nacionalidad"
         android:layout_below="@+id/spinnerarchivonacionalidad"
@@ -40,9 +40,9 @@
         android:layout_width="200pt"
         android:layout_height="wrap_content"
         android:id="@+id/edit_nombre_archivo"
-        android:layout_below="@+id/nombrearchivo"
-        android:layout_alignLeft="@+id/nombrearchivo"
-        android:layout_alignStart="@+id/nombrearchivo" />
+        android:layout_below="@+id/nombrebiblioteca"
+        android:layout_alignLeft="@+id/nombrebiblioteca"
+        android:layout_alignStart="@+id/nombrebiblioteca" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Material"
-        android:id="@+id/material"
+        android:id="@+id/edicion"
         android:layout_alignParentTop="false"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/edit_autor"
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/edit_seccion"
-        android:layout_below="@+id/material"
+        android:layout_below="@+id/edicion"
         android:layout_alignLeft="@+id/edit_nombre_archivo"
         android:layout_alignStart="@+id/edit_nombre_archivo"
         android:layout_alignParentRight="true"
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Origen del Plano"
-        android:id="@+id/legajo"
+        android:id="@+id/descripcion"
         android:layout_below="@+id/edit_seccion"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:text="Objeto de excavación"
         android:id="@+id/radioButton"
-        android:layout_below="@+id/legajo"
+        android:layout_below="@+id/descripcion"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:checked="false" />
