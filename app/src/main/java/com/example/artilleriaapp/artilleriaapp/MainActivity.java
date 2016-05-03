@@ -62,6 +62,17 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter adapter=ArrayAdapter.createFromResource(this,R.array.versiones,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter);*/
+
+          /*  spinner = (Spinner) findViewById(R.id.spinner);
+
+        String []opciones={"teórico","práctico"};
+        System.out.print("HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        ArrayAdapter<String> contenido=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,opciones);
+      //  if(contenido== null)
+            System.out.print("FIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIHOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+            System.out.print(contenido);
+        // else
+           spinner.setAdapter(contenido);*/
     }
 
      public void PasarMenuRegistro(View view){

@@ -13,11 +13,15 @@
         android:orderInCategory="100"
         android:icon="@drawable/ic_action_refresh"
         android:showAsAction="always"/>-->
-    <item
+  <!--  <item
         android:id="@+id/menu_save_text"
-        android:title="HOLA" />
+        android:title="HOLA" />-->
 
-
+    <item
+        android:id="@+id/menu_spinner1"
+        android:showAsAction="always"
+        android:orderInCategory="1"
+        android:actionViewClass="android.widget.Spinner" />
    <!-- <item
         android:id="@+id/action_refresh"
         android:orderInCategory="100"

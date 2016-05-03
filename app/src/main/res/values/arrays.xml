@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="versiones">
-        <item>HOLA</item>
-        <item>teorico</item>
-        <item>práctico</item>
+    <string-array name="tipoarma">
+        <item>TEÓRICO</item>
+        <item>PRÁCTICO</item>
     </string-array>
 </resources>

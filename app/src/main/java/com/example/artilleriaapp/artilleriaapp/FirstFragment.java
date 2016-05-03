@@ -1,5 +1,6 @@
 package com.example.artilleriaapp.artilleriaapp;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -23,12 +24,12 @@ public class FirstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.first_frag, container, false);
 
+
    //     TextView tv = (TextView) v.findViewById(R.id.tvFragFirst);
       //  tv.setText(getArguments().getString("msg"));
         spinner = (Spinner) v.findViewById(R.id.spinner);
 
         String []opciones={"teórico","práctico"};
-
         ArrayAdapter<String> contenido= new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, opciones);
         spinner.setAdapter(contenido);
 
