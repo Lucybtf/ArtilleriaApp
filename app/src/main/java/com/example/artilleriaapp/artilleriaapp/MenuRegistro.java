@@ -24,7 +24,7 @@ import android.widget.Toast;
 public class MenuRegistro extends AppCompatActivity implements ActionBar.OnNavigationListener {
 
     private Spinner spinner;
-    private MenuItem mSpinnerItem1 = null;
+  //  private MenuItem mSpinnerItem1 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class MenuRegistro extends AppCompatActivity implements ActionBar.OnNavig
         //getActionBar().setDisplayShowTitleEnabled(false);
         ActionBar actionBar=getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle("Tipo de arma");
+        actionBar.setTitle("Tipo Arma");
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 
         final String[] dropdownValues=getResources().getStringArray(R.array.tipoarma);

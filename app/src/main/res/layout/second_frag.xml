@@ -17,7 +17,7 @@
         android:layout_below="@+id/tipo_arma" />
 
     <Spinner
-        android:id="@+id/spinnernacionalidad"
+        android:id="@+id/spinnerarchivonacionalidad"
         android:layout_width="match_parent"
         android:layout_height="30pt"
         android:layout_alignParentRight="true"
@@ -29,28 +29,28 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Procedencia"
-        android:id="@+id/textView"
+        android:id="@+id/nombrearchivo"
         android:layout_alignRight="@+id/nacionalidad"
         android:layout_alignEnd="@+id/nacionalidad"
-        android:layout_below="@+id/spinnernacionalidad"
+        android:layout_below="@+id/spinnerarchivonacionalidad"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="200pt"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_procedencia"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+        android:id="@+id/edit_nombre_archivo"
+        android:layout_below="@+id/nombrearchivo"
+        android:layout_alignLeft="@+id/nombrearchivo"
+        android:layout_alignStart="@+id/nombrearchivo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Fecha de procedencia"
-        android:id="@+id/fecha_procedencia"
-        android:layout_below="@+id/edit_procedencia"
+        android:id="@+id/autor"
+        android:layout_below="@+id/edit_nombre_archivo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -59,12 +59,12 @@
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
-        android:id="@+id/edit_fecha_procedencia"
-        android:layout_below="@+id/fecha_procedencia"
-        android:layout_alignLeft="@+id/fecha_procedencia"
-        android:layout_alignStart="@+id/fecha_procedencia"
-        android:layout_alignRight="@+id/spinnernacionalidad"
-        android:layout_alignEnd="@+id/spinnernacionalidad" />
+        android:id="@+id/edit_autor"
+        android:layout_below="@+id/autor"
+        android:layout_alignLeft="@+id/autor"
+        android:layout_alignStart="@+id/autor"
+        android:layout_alignRight="@+id/spinnerarchivonacionalidad"
+        android:layout_alignEnd="@+id/spinnerarchivonacionalidad" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,17 +74,17 @@
         android:id="@+id/material"
         android:layout_alignParentTop="false"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/edit_fecha_procedencia"
+        android:layout_below="@+id/edit_autor"
         android:layout_alignParentEnd="false"
         android:layout_alignParentLeft="false" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_material"
+        android:id="@+id/edit_seccion"
         android:layout_below="@+id/material"
-        android:layout_alignLeft="@+id/edit_procedencia"
-        android:layout_alignStart="@+id/edit_procedencia"
+        android:layout_alignLeft="@+id/edit_nombre_archivo"
+        android:layout_alignStart="@+id/edit_nombre_archivo"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -94,8 +94,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Origen del Plano"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/edit_material"
+        android:id="@+id/legajo"
+        android:layout_below="@+id/edit_seccion"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:text="Objeto de excavación"
         android:id="@+id/radioButton"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/legajo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:checked="false" />
@@ -131,5 +131,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_arrow_forward_white_18dp" />
 
 </RelativeLayout>
