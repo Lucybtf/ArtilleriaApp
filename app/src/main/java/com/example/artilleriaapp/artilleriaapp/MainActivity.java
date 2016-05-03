@@ -6,13 +6,18 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.graphics.Color;
 import android.widget.Spinner;
 
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.hp.hpl.jena.sparql.core.Var;
 
 import java.util.List;
@@ -28,7 +33,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setIcon(R.mipmap.ic_launcher);
+        actionBar.setIcon(R.mipmap.canonicon);
+        /*AHBottomNavigation bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
+
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.app_name, R.drawable.ic_action_refresh, R.color.colorPrimaryDark);
+        bottomNavigation.addItem(item1);
+        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#CBCBCB"));
+        bottomNavigation.setAccentColor(Color.parseColor("#F63D2B"));*/
+
+        /* int event=KeyEvent.KEYCODE_MENU;
+        if(event==0)
+                bottomNavigation.hideBottomNavigation(true);
+        else
+            bottomNavigation.restoreBottomNavigation(true);*/
+        //bottomNavigation.hideBottomNavigation(true);
        // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
        // setSupportActionBar(toolbar);
       //  btnAceptar = (Button)findViewById(R.id.btnAceptar);
@@ -72,6 +90,21 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         return true;
     }
+
+   /* @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        if(KeyEvent.KEYCODE_MENU==keyCode) {
+            Log.d("BaseActivity", "KEYCODE_MENU PRESSED");
+         //   Log.d("BaseActivity", "KEYCODE_MENU PRESSED");
+            //bottomNavigation.hideBottomNavigation(true);
+            return true;
+        }
+        else
+            return super.onKeyDown(keyCode, event);
+    }*/
+
+
      /*   switch (item.getItemId()) {
             case R.id.action_settings:
                 // User chose the "Settings" item, show the app settings UI...

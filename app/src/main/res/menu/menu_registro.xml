@@ -8,19 +8,17 @@
         android:icon="@drawable/ic_action_refresh"
         android:title="@string/app_name"
         app:showAsAction="always|withText"/>-->
-    <item
+  <!--  <item
         android:id="@+id/menu_save"
         android:orderInCategory="100"
         android:icon="@drawable/ic_action_refresh"
-        android:showAsAction="always">
-    </item>
+        android:showAsAction="always"/>-->
     <item
         android:id="@+id/menu_save_text"
-        android:title="HOLA"
-        android:showAsAction="ifRoom">
-    </item>
+        android:title="HOLA" />
 
-    <item
+
+   <!-- <item
         android:id="@+id/action_refresh"
         android:orderInCategory="100"
         android:icon="@drawable/ic_action_refresh"
@@ -30,5 +28,5 @@
     <item
         android:id="@+id/action_settings"
         android:title="Settings">
-    </item>
+    </item>-->
 </menu>

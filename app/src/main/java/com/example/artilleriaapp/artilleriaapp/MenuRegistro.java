@@ -46,12 +46,17 @@ public class MenuRegistro extends AppCompatActivity {
         @Override
         public int getCount()
         {
-            return 1;
+            return 3;
         }
         @Override
         public Fragment getItem(int position)
         {
-            return FirstFragment.newInstance("FirstFragment, Instance 1");
+            if(position==0)
+                return FirstFragment.newInstance();
+            if(position==1)
+                return SecondFragment.newInstance();
+            else
+                return FirstFragment.newInstance();
         }
     }
 
