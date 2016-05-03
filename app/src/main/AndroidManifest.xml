@@ -18,7 +18,10 @@
         <activity android:name=".MenuRegistro" />
         <activity android:name=".MenuConsulta" />
         <activity android:name=".Archivo" />
-        <activity android:name=".Biblioteca"></activity>
+        <activity android:name=".Biblioteca" />
+        <activity android:name=".ObjetoExcavado" />
+        <activity android:name=".Pecio" />
+        <activity android:name=".Otros"></activity>
     </application>
 
 </manifest>
