@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Nacionalidad del Plano"
-        android:id="@+id/nacionalidad"
+        android:id="@+id/fecha_excavacion"
         android:layout_below="@+id/tipo_arma" />
     <Spinner
         android:id="@+id/spinnerarchivonacionalidad"
@@ -22,7 +22,7 @@
         android:layout_height="30pt"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/nacionalidad"
+        android:layout_below="@+id/fecha_excavacion"
         android:spinnerMode="dropdown" />
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Autor"
-        android:id="@+id/autor"
+        android:id="@+id/arqueologo"
         android:layout_below="@+id/edit_nombre_archivo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -58,9 +58,9 @@
         android:inputType="date"
         android:ems="10"
         android:id="@+id/edit_autor"
-        android:layout_below="@+id/autor"
-        android:layout_alignLeft="@+id/autor"
-        android:layout_alignStart="@+id/autor"
+        android:layout_below="@+id/arqueologo"
+        android:layout_alignLeft="@+id/arqueologo"
+        android:layout_alignStart="@+id/arqueologo"
         android:layout_alignRight="@+id/spinnerarchivonacionalidad"
         android:layout_alignEnd="@+id/spinnerarchivonacionalidad" />
 
@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Descripción"
-        android:id="@+id/descripcion"
+        android:id="@+id/fecha_localizacion"
         android:layout_below="@+id/edit_seccion"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -101,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/edit_legajo"
-        android:layout_below="@+id/descripcion"
+        android:layout_below="@+id/fecha_localizacion"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/edit_seccion"

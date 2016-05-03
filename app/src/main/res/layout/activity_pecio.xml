@@ -9,4 +9,139 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.artilleriaapp.artilleriaapp.Pecio">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Estado del Pecio"
+        android:id="@+id/fecha_localizacion"
+        android:layout_below="@+id/edit_seccion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extraído"
+        android:id="@+id/radioButtonextraido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_below="@+id/fecha_localizacion" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumergido"
+        android:id="@+id/radioButtonsumergido"
+        android:checked="false"
+        android:layout_below="@+id/radioButtonextraido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fecha de localización"
+        android:id="@+id/fecha_sumergido"
+        android:layout_below="@+id/radioButtonsumergido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edit_fecha_localizacion"
+        android:layout_below="@+id/fecha_sumergido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Expediente o Referencia"
+        android:id="@+id/expediente_referencia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_fecha_localizacion"
+        android:layout_alignRight="@+id/edit_fecha_localizacion"
+        android:layout_alignEnd="@+id/edit_fecha_localizacion" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_referencia"
+        android:layout_alignRight="@+id/expediente_referencia"
+        android:layout_alignEnd="@+id/expediente_referencia"
+        android:layout_below="@+id/expediente_referencia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Organismo"
+        android:id="@+id/organismo"
+        android:layout_alignRight="@+id/edit_referencia"
+        android:layout_alignEnd="@+id/edit_referencia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_referencia" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_organismo"
+        android:layout_below="@+id/organismo"
+        android:layout_alignRight="@+id/organismo"
+        android:layout_alignEnd="@+id/organismo"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lugar actual "
+        android:id="@+id/textView"
+        android:layout_below="@+id/edit_organismo"
+        android:layout_alignRight="@+id/edit_organismo"
+        android:layout_alignEnd="@+id/edit_organismo"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@id/lugaractual"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Autor"
+        android:id="@+id/autor"
+        android:layout_below="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_autor"
+        android:layout_below="@+id/autor"
+        android:layout_alignRight="@+id/autor"
+        android:layout_alignEnd="@+id/autor"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

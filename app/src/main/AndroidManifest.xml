@@ -21,7 +21,8 @@
         <activity android:name=".Biblioteca" />
         <activity android:name=".ObjetoExcavado" />
         <activity android:name=".Pecio" />
-        <activity android:name=".Otros"></activity>
+        <activity android:name=".Otros" />
+        <activity android:name=".AnalisisMorfologico"></activity>
     </application>
 
 </manifest>

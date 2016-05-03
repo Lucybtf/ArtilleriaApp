@@ -9,4 +9,174 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.artilleriaapp.artilleriaapp.ObjetoExcavado">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fecha de la excavación"
+        android:id="@+id/fecha_excavacion"
+        android:layout_below="@+id/tipo_arma" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edit_fecha_excavacion"
+        android:layout_below="@+id/fecha_excavacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Arqueólogos"
+        android:id="@+id/arqueologo"
+        android:layout_below="@+id/edit_fecha_excavacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edit_autor"
+        android:layout_below="@+id/arqueologo"
+        android:layout_alignLeft="@+id/arqueologo"
+        android:layout_alignStart="@+id/arqueologo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Estado de restauración"
+        android:id="@+id/estado_restauración"
+        android:layout_below="@+id/edit_autor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edit_restauracion"
+        android:layout_below="@+id/estado_restauración"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edit_autor"
+        android:layout_alignEnd="@+id/edit_autor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lugar actual"
+        android:id="@+id/lugaractual"
+        android:layout_below="@+id/edit_restauracion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edit_lugar_actual"
+        android:layout_below="@+id/lugaractual"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edit_restauracion"
+        android:layout_alignEnd="@+id/edit_restauracion" />
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre de la Biblioteca"
+        android:id="@+id/nombrebiblioteca"
+        android:layout_below="@+id/spinnerarchivonacionalidad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200pt"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_nombre_archivo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="151dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Autor"
+        android:id="@+id/autor"
+        android:layout_below="@+id/edit_nombre_archivo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edit_autor"
+        android:layout_below="@+id/autor"
+        android:layout_alignLeft="@+id/autor"
+        android:layout_alignStart="@+id/autor"
+        android:layout_alignRight="@+id/spinnerarchivonacionalidad"
+        android:layout_alignEnd="@+id/spinnerarchivonacionalidad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Edición"
+        android:id="@+id/edicion"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_autor"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_seccion"
+        android:layout_below="@+id/edicion"
+        android:layout_alignLeft="@+id/edit_nombre_archivo"
+        android:layout_alignStart="@+id/edit_nombre_archivo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Descripción"
+        android:id="@+id/descripcion"
+        android:layout_below="@+id/edit_seccion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_legajo"
+        android:layout_below="@+id/descripcion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edit_seccion"
+        android:layout_alignEnd="@+id/edit_seccion" />-->
+
+
+
 </RelativeLayout>
