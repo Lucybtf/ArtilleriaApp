@@ -19,34 +19,15 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         tools:ignore="UnusedAttribute"/>-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="20pt"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Formulario de Registro de Armas"
-        android:id="@+id/nombre_menu_registro"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Tipo de arma"
         android:id="@+id/tipo_arma"
-        android:layout_below="@+id/nombre_menu_registro"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="30pt"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false"
-        android:layout_below="@+id/tipo_arma"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentEnd="false" />-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +35,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Nacionalidad"
         android:id="@+id/nacionalidad"
-        android:layout_below="@+id/spinner" />
+        android:layout_below="@+id/tipo_arma" />
 
     <Spinner
         android:id="@+id/spinnernacionalidad"
@@ -136,7 +117,37 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"></TabWidget>-->
 
-    <android.support.design.widget.FloatingActionButton
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Origen del Plano"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/edit_material"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Archivo"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biblioteca"
+        android:id="@+id/radioButton2"
+        android:checked="false"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+   <!-- <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -144,10 +155,10 @@
         android:src="@android:drawable/ic_menu_camera"
         android:layout_below="@+id/edit_material"
         android:layout_toRightOf="@+id/fecha_procedencia"
-        android:layout_toEndOf="@+id/fecha_procedencia"/>
+        android:layout_toEndOf="@+id/fecha_procedencia"/>-->
 
-      <!--  android:layout_marginTop="30dp"
-        android:layout_marginStart="100dp" />-->
+    <!--  android:layout_marginTop="30dp"
+      android:layout_marginStart="100dp" />-->
     <!--  android:layout_marginLeft="210dp"-->
 
 </RelativeLayout>

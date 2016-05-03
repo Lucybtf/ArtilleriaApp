@@ -33,7 +33,8 @@ public class MenuRegistro extends AppCompatActivity implements ActionBar.OnNavig
 
         //getActionBar().setDisplayShowTitleEnabled(false);
         ActionBar actionBar=getSupportActionBar();
-        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setTitle("Tipo de arma");
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 
         final String[] dropdownValues=getResources().getStringArray(R.array.tipoarma);
@@ -74,12 +75,12 @@ public class MenuRegistro extends AppCompatActivity implements ActionBar.OnNavig
     public boolean onNavigationItemSelected(int itemPosition, long itemId) {
         switch (itemPosition) {
             case 0:
-                Toast.makeText(getApplicationContext(), getResources().getString(R.string.red), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.teórico), Toast.LENGTH_SHORT).show();
                 //View v=inflater.inflate(R.layout.first_frag, container, false);
                 setContentView(R.layout.first_frag);
                 break;
             case 1:
-                Toast.makeText(getApplicationContext(), getResources().getString(R.string.blue), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.práctico), Toast.LENGTH_SHORT).show();
                // ViewPager pager =null;
                 setContentView(R.layout.second_frag);
                 break;

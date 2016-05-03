@@ -27,12 +27,12 @@ public class FirstFragment extends Fragment {
 
    //     TextView tv = (TextView) v.findViewById(R.id.tvFragFirst);
       //  tv.setText(getArguments().getString("msg"));
-        spinner = (Spinner) v.findViewById(R.id.spinner);
+       // spinner = (Spinner) v.findViewById(R.id.spinner);
 
-        String []opciones={"teórico","práctico"};
+     /*   String []opciones={"teórico","práctico"};
         ArrayAdapter<String> contenido= new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, opciones);
         spinner.setAdapter(contenido);
-
+*/
         return v;
     }
 
